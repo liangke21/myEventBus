@@ -1,6 +1,27 @@
 # EventBus使用以及源码分析
 
 
+[![](https://jitpack.io/v/liangke21/myEventBus.svg)](https://jitpack.io/#liangke21/myRecyclerView)
+
+### 将其添加到存储库末尾的root build.gradle中
+```java
+allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
+```
+### 添加依赖项
+```java
+	dependencies {
+	        implementation 'com.github.liangke21:myEventBus:Tag'
+            implementation 'org.greenrobot:eventbus:3.2.0'
+	}
+
+```
+
+
 ```java
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
